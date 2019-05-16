@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_students" value="name:id;datatype:int,name:student_name;datatype:string,name:reg_no;datatype:string" />
+	<infoitem key="UD_sessions" value="name:id;datatype:int,name:session;datatype:string" />
+	<infoitem key="UD_courses" value="name:id;datatype:int,name:course_code;datatype:string,name:course_name;datatype:string,name:credit_unit;datatype:string" />
+	<infoitem key="UD_scores" value="name:id;datatype:int,name:session;datatype:string,name:semester;datatype:string,name:course_code;datatype:string,name:course_name;datatype:string,name:cu;datatype:int,name:scores;datatype:real" />
+	<infoitem key="UD_course" value="name:id;datatype:int,name:course_code;datatype:string,name:course_name;datatype:string,name:credit_unit;datatype:string" />
+</info>

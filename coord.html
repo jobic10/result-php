@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<!-- Mirrored from www.javascriptkit.com/script/script2/cubeslideshow.shtml by HTTrack Website Copier/3.x [XR&CO'2013], Thu, 11 Dec 2014 16:43:05 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="scripts.css" />
+<meta name="description" content="Click here to get free JavaScripts, hassle free!">
+<meta name="keywords"
+content="free JavaScript, cut and paste JavaScript, JavaScript tutorial">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<title>Cut &amp; Paste 3D Cube Slideshow</title>
+
+<style>
+
+div.jkcubeslideshow{ /* main container */
+	background: white;
+	display: block;
+	width: 300px; /* default width of main container */
+	height: 375px; /* default height of main container */
+	position: relative;
+	-webkit-perspective: 1000px; /* Greater the value, less pronounced the 3D effect */
+	perspective: 1000px; /* Greater the value, less pronounced the 3D effect */;
+}
+
+div.side1, div.side2 { /* two panels that make up cube effect */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	backface-visibility: hidden; /* hide backface of DIVs */
+	transition: all 1s ease-in-out; /* CSS transition. Actual duration set by script */;
+}
+
+div.side1 img, div.side2 img { /* how should slideshow images be sized inside panels? */
+	width: 100%;
+	height: auto;
+}
+
+
+</style>
+
+
+<script src="jquery.min.js"></script>
+
+<script src="jkcubeslideshow.js">
+
+/* =====================================
+ ** 3D Cube Slideshow- by JavaScript Kit (www.javascriptkit.com)
+ ** Visit JavaScript Kit at http://www.javascriptkit.com/ for full source code
+===================================== */
+
+</script>
+
+<script>
+
+var cubeshowvar1, cubeshowvar2
+
+jQuery(function($){
+	cubeshowvar1 = new jkcubeslideshow({
+		id: 'cubeshow1',
+		dimensions: [70, 40],
+		images: [
+							['food1.jpg'],
+							['food2.jpg'],
+							['food3.jpg'],
+							['food4.jpg'],
+							['food5.jpg']
+						]
+	})
+
+	cubeshowvar2 = new jkcubeslideshow({
+		id: 'cubeshow2',
+		dimensions: [100, 100],
+		pause: 2000,
+		images: [
+							['food1.jpg', 'http://cssdrive.com'],
+							['food2.jpg', 'http://dynamicdrive.com'],
+							['food3.jpg', 'http://javascriptkit.com'],
+							['food4.jpg', 'http://tools.dynamicdrive.com']
+						]
+	})
+
+})
+
+</script>
+
+</head>
+
+<body>
+
+<div>
+ <!--ZOOMSTOP-->
+
+
+<!-- BuySellAds Ad Code -->
+<script type="text/javascript">
+(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '../../../s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();
+</script>
+<!-- End BuySellAds Ad Code -->
+
+<script type="text/javascript" src="dropdowntabs.js">
+</script></div>
+<table style="margin-left:40px" border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="500"><!--webbot bot="HTMLMarkup" startspan --><div class="jkcubeslideshow" id="cubeshow1"></div>
+<br />
+<a href="#" onClick="cubeshowvar1.rotatecube('back'); return false"> <img src="blueleft.gif" style="border:none" /> Back</a> <a href="#" onClick="cubeshowvar1.rotatecube('forward'); return false" style="margin-left:160px">Forward <img src="blueright.gif" style="border:none" /></a><!--webbot bot="HTMLMarkup" endspan i-checksum="16903" --></td>
+		<td><!--webbot bot="HTMLMarkup" startspan --><div class="jkcubeslideshow" id="cubeshow2">
+
+</div>
+<a href="#" onClick="javascript:cubeshow1.rotatecube('back')">Back</a> <a href="#" onClick="javascript:cubeshow1.rotatecube('forward')">Forward</a><!--webbot bot="HTMLMarkup" endspan i-checksum="31012" --></td>
+	</tr>
+</table>
+
+<p>&nbsp;</p>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><style>
+<!--
+.intro{
+position:absolute;
+left:0;
+top:0;
+layer-background-color:green;
+background-color:green;
+border:0.1px solid green;
+z-index:9;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="i1" class="intro"></div><div id="i2" class="intro"></div>
+<script language="JavaScript1.2">
+
+
+var ns4=document.layers?1:0
+var ie4=document.all?1:0
+var ns6=document.getElementById&&!document.all?1:0
+
+var speed=20
+var temp=new Array()
+var temp2=new Array()
+if (ns4){
+for (i=1;i<=2;i++){
+temp[i]=eval("document.i"+i+".clip")
+temp2[i]=eval("document.i"+i)
+temp[i].width=window.innerWidth/2
+temp[i].height=window.innerHeight
+temp2[i].left=(i-1)*temp[i].width
+}
+}
+else if (ie4||ns6){
+var clipright=ns6?window.innerWidth/2*0.98:document.body.clientWidth/2,clipleft=0
+for (i=1;i<=2;i++){
+temp[i]=ns6?document.getElementById("i"+i).style:eval("document.all.i"+i+".style")
+temp[i].width=ns6?window.innerWidth/2*0.98:document.body.clientWidth/2
+temp[i].height=ns6?window.innerHeight-1: document.body.offsetHeight
+temp[i].left=(i-1)*parseInt(temp[i].width)
+}
+}
+
+
+function openit(){
+window.scrollTo(0,0)
+if (ns4){
+temp[1].right-=speed
+temp[2].left+=speed
+if (temp[2].left>window.innerWidth/2)
+clearInterval(stopit)
+}
+else if (ie4||ns6){
+clipright-=speed
+temp[1].clip="rect(0 "+clipright+" auto 0)"
+clipleft+=speed
+temp[2].clip="rect(0 auto auto "+clipleft+")"
+if (clipright<=0){
+clearInterval(stopit)
+if (ns6){
+temp[1].display="none"
+temp[2].display="none"
+}
+}
+}
+}
+
+function gogo(){
+stopit=setInterval("openit()",100)
+}
+gogo()
+
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="" />
+<style type="text/css">
+*{
+	margin:0px;
+	padding:0px;
+	
+	
+	}
+	body,#container1{
+		background:#936;
+		position:relative;
+	}
+	#container1{
+		width:900px;
+		margin:opx auto;
+		
+		}
+		#container2{
+			position:absolute;
+			top:0px;
+			bottom:0px;
+			left:0px;
+			right:0px;
+		}
+</style>
+</head>
+
+<body>
+<div id="container1">
+<h1> CONFIDENTIAL</h1>
+<div id="container2">
+<h1> ajojosjosjos</h1> 
+sssssssssssssssssssssss
+<h1> ajojosjosjos</h1>
+sssssssssssssssssssssss 
+<h1> ajojosjosjos</h1>
+sssssssssssssssssssssss </div>
+</body>
+</html>

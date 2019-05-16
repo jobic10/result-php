@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_grading" value="name:id;datatype:int,name:gfrom;datatype:string,name:gto;datatype:string,name:grade;datatype:string,name:grade_value;datatype:string" />
+</info>

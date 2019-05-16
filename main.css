@@ -1,0 +1,567 @@
+@import url(file:///C|/My Web Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/bluetabs.css);
+
+body{
+margin: 0;
+padding: 0;
+font: normal 90% "Lucida Grande", "Trebuchet MS", Verdana, Helvetica, sans-serif;
+background: white;
+}
+
+code.blockcode{
+display: block;
+padding: 5px;
+border: 1px solid gray;
+width: 400px;
+background-color: white;
+}
+
+code{
+background-color: lightyellow;
+}
+
+.scriptbreadcrumb{
+text-align: center;
+font-size: 105%;
+}
+
+#credits{
+padding: 5px;
+}
+
+.footad a{
+text-decoration: none;
+font-size: 85%;
+color: brown !important;
+}
+
+pre, p.codearea{
+background-color: #EFEFEF;
+font-size: 13px;
+width: 98%;
+border: 1px dashed gray;
+padding: 5px;
+}
+
+p.codearea{
+margin: 10px 0;
+}
+
+textarea.codecontainer{
+border: 1px dashed gray;
+width: 98%;
+height: 150px;
+background-color: #EFEFEF;
+margin-top: 1em;
+clear: left;
+padding-left: 5px;
+}
+
+.selectcode{
+margin-top: 1em;
+}
+
+.selectcode a.tabs{
+border: 1px solid gray;
+border-bottom-width: 0;
+padding: 0 4px;
+text-decoration: none;
+color: navy;
+margin-right: 3px;
+}
+
+.selectcode a.tabs:visited, .selectcode a.tabs:active{
+color: navy;
+}
+
+.selectcode a.tabs:hover{
+background-color: #EFEFEF;
+color: navy;
+}
+
+.submitform p{
+margin: 10px 0;
+}
+
+.submitform .inputbox{
+width: 300px;
+border: 1px solid gray;
+}
+
+
+.submitform textarea{
+width: 450px;
+height: 150px;
+border: 1px solid gray;
+}
+
+
+.submitform .formbuttons{
+border: 1px solid black;
+}
+
+.codetitle{
+padding-left: 19px;
+background: white url(file:///C|/My%20Web%20Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/squarebullet2.html) center left no-repeat;
+}
+
+.codeimages img{
+border: 1px dashed gray;
+margin-right: 8px;
+}
+
+a:link    { color: #aa2716}
+a:visited { color: #821F11}  
+a:hover, a:active  { color: red;}
+
+.nounderline a{
+text-decoration: none;
+}
+
+.noindentlist{
+margin: 0;
+padding: 0;
+}
+
+.smalltext{
+font-size: 90%;
+}
+
+
+.maincontainer{
+background: transparent url(file:///C|/My%20Web%20Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/verticalbar2.gif) -10px 0 repeat-y;
+}
+
+.header{
+font-size: 120%;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.comment{
+background-color: #ececec;
+width: 460px;
+padding: 10px;
+}
+
+.commentfooter{
+background: url(file:///C|/My%20Web%20Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/arrow.gif) 20px 0 no-repeat;
+padding-left: 58px;
+padding-top: 1px;
+margin-bottom: 2em;
+font-size: 90%;
+color: #4A4A4A;
+}
+
+.categoryheader{
+font-weight: bold;
+background: #D8E7CB url(file:///C|/My%20Web%20Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/categoryheader.gif) repeat-x top left;
+color: black;
+border: 1px solid gray;
+border-width: 1px 0;
+margin: 0;
+margin-bottom: 1em;
+text-transform: uppercase;
+padding: 2px 0 2px 8px;
+}
+
+.columntitleline, .columntitlebullet, .columntitlegradient{
+font-weight: bold;
+}
+
+.columntitleline{
+background: transparent url(file:///C|/My%20Web%20Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/line.gif) bottom left repeat-x;
+padding-bottom: 10px;
+font-size: 110%;
+}
+
+.columntitlebullet{
+background: transparent url(file:///C|/My%20Web%20Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/bullet.gif) center left no-repeat;
+font-size: 105%;
+margin-bottom: 5px;
+margin-top: 5px;
+border-bottom: 1px solid gray;
+text-indent: 19px;
+}
+
+.columntitlegradient{
+background: white url(file:///C|/My%20Web%20Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/gradient3.jpg) repeat-y
+
+}
+
+/* ######### Top Section ######### */
+
+#topsection{
+}
+
+#jksitesearch #zoom_query{
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+width: 280px;
+font: bold 14px Arial;
+height: 18px;
+padding-top: 5px;
+padding-left: 5px;
+border: 1px solid black;
+}
+
+#jksitesearch .zoom_button{
+vertical-align: middle;
+position: relative;
+top: -5px;
+}
+
+#jksitesearch #jksitesearch_cat input{
+margin-left: 10px;
+}
+
+#topbar{
+color: black;
+background: #edf4e6;;
+}
+
+#jklogo{
+padding: 10px;
+}
+
+#toprightdiv{
+
+font: bold 11px arial, sans-serif;
+float: right;
+text-align: right;
+margin: 10px 8px 0 0;
+}
+
+
+#toprightdiv a{
+text-decoration: none;
+color: navy;
+margin-right: 4px;
+letter-spacing: 0.1pt;
+}
+
+#toprightdiv a:hover{
+color: blue;
+}
+
+#toprightdiv #topform{
+margin: 0;
+padding: 0;
+margin-bottom: 5px;
+}
+
+#toprightdiv #keywords{
+border: 1px solid gray;
+width: 210px;
+background: #FBFCFA;
+font: 11px verdana, sans-serif;
+color: #443;
+padding: 3px;	outline: none;
+}
+
+#toprightdiv #keywords:focus{
+border: 1px solid black;
+}
+
+#toprightdiv #topformbutton { cursor:pointer;  margin-top:5px;  border:outset 1px #ccc; background:#999; font-size: 12px; color:#666; font-weight:bold; padding:5px;  background:url(file:///C|/My%20Web%20Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/topbar3.html) repeat-x left top; padding:1px; }
+
+
+#topbanner{
+clear: left;
+text-align: center;
+padding: 10px 0;
+}
+
+
+#myform{ /*CSS for sample search box. Remove if desired */
+float: right;
+margin: 0;
+margin-top: 3px;
+padding: 0;
+}
+
+#myform .textinput{
+width: 190px;
+border: 1px solid gray;
+}
+
+#myform .submit{
+font: normal 12px Verdana;
+height: 22px;
+border: 1px solid black;
+background-color: lightyellow;
+}
+
+
+/* ######### Left column ######### */
+
+#leftcolumn{
+background: transparent;
+float:left;
+width: 170px; /*Width of left column*/
+margin-left: -100%;
+}
+
+#leftcolumn p, #leftcolumn div{
+margin: 8px;
+}
+
+#leftcolumn p.nomargin, #leftcolumn div.nomargin{
+margin: 0;
+padding: 2px;
+}
+
+#leftcolumn div.nomargin div, #rightcolumn div.nomargin div, #middlecolumn div.nomargin div{
+margin: 0;
+padding: 0;
+}
+
+span.bsa_it_p{
+bottom: -1px !important;
+}
+
+#leftcolumn .bsaalt{
+margin:-3px 0 0 4px;
+padding:0;
+text-align:center;
+}
+
+*:first-child+html #leftcolumn .bsaalt{margin-top: -10px}
+* html #leftcolumn .bsaalt{margin-top: -10px}
+
+#leftcolumn div.categoryheader{
+margin: 0; /*cancel default margin of DIV*/
+}
+
+.ddmarkermenu{
+list-style-type: none;
+margin: 0;
+margin-bottom: 8px;
+padding: 0;
+}
+
+.ddmarkermenu li{
+padding-bottom: 2px;
+}
+
+.ddmarkermenu li a{
+color: #aa2716;
+background: url(file:///C|/My%20Web%20Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/arrowbullet.html) no-repeat center left;
+display: block;
+padding: 2px 0;
+padding-left: 12px;
+text-decoration: none;
+font-weight: bold;
+border-bottom: 1px solid #dadada;
+font-size: 90%;
+}
+
+.ddmarkermenu li a:visited{
+color: #aa2716;
+}
+
+.ddmarkermenu a:hover{
+background-color: #F3F3F3;
+color: #aa2716;
+}
+
+.additionalpartners{
+position: relative;
+left: -5px;
+}
+
+.additionalpartners a{
+font-size: 12px;
+text-decoration: none;
+}
+
+
+/* ######### Middle column ######### */
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#middlecolumn{
+background-color: transparent;
+margin: 0 170px 0 170px; /*0 rightcolumn 0 leftcolumn*/
+padding-left: 12px;
+padding-right: 10px;
+padding-bottom: 1em;
+}
+
+.contentareas{
+width: 49%;
+float: left;
+}
+
+.contentareas ul{
+list-style-type: disk;
+list-style-image: url(file:///C|/My%20Web%20Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/heart.html);
+margin: 5px auto 10px 18px;
+padding: 0;
+font-size: 16px;
+}
+
+.contentareas li{
+padding: 1px 0 2px 0;
+border-bottom: 1px solid #ececec;
+}
+
+.contentareas li a{
+color: #911c11;
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+display: block;
+}
+
+.contentareas li a:hover{
+background: #e7eea8;
+}
+
+.contentareas li a:visited{
+color: navy;
+}
+
+.contentareas li span a{
+font-weight: normal;
+}
+
+
+.headers{
+border: 1px solid #BBB;
+background: url(file:///C|/My%20Web%20Sites/http___www.javascriptkit.com/www.javascriptkit.com/jkincludes/chromebg.gif) center center repeat-x;
+margin: 0;
+padding: 3px;
+text-align: left;
+font-size: 120%;
+}
+
+.headers a, .headers a:visited, .headers a:active{
+color: navy;
+text-decoration: none;
+}
+
+.headers a:hover{
+color: blue;
+}
+
+.contentlisting{
+font-size: 90%;
+border-bottom: 1px solid #D8D8D8;
+margin-bottom: 1em;
+}
+
+.contentlisting .title{
+margin-top: 10px;
+margin-bottom: 0;
+padding: 0;
+font-size: 14px;
+}
+
+.contentlisting .info{
+color: gray;
+margin: 1px 0;
+}
+
+
+div.info + p:first-letter{
+font-size:;
+float:left;
+font: bold 180% Arial;
+margin-right: 3px;
+}
+
+
+.categorylinks li a{ /*Left Menu Links*/
+width: 100%; /*NON script page*/
+}
+
+
+/* ######### Right column ######### */
+
+#rightcolumn{
+background-color: transparent;
+float: left;
+width: 165px; /*Width of right column*/
+padding-right: 5px;
+margin-left: -170px; /*Set left margin to -(RightColumnWidth + any padding)*/
+}
+
+
+#rightcolumn .newscontainer{
+border: 1px solid #dadada;
+background-color: lightyellow;
+margin-bottom: 1em;
+padding: 5px;
+font-size: 90%;
+}
+
+#rightcolumn ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+
+/* ######### Site Footer ######### */
+
+#contentfooter{
+font-size: 11px;
+font-family: Verdana;
+padding-bottom: 1em;
+margin-left: 173px;
+clear: both;
+}
+
+#footerarea{
+clear: left;
+background: #ecf0fc;
+background: #D8E7CB;
+background: #edf4e6;
+border-top: 1px solid gray;
+padding-top: 10px;
+font-size: 12px;
+text-align: center;
+height: 50px;
+}
+
+
+.clearfix:after{ /*Clear floats hack: http://positioniseverything.net/easyclearing.html*/
+content: "."; 
+display: block; 
+height: 0; 
+clear: both; 
+visibility: hidden;
+}
+
+.clearfix {display: inline-table;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+/*** Mobile specific CSS ***/
+
+@media screen and (max-width:550px){
+
+.maincontainer{
+background: none !important;
+}
+
+#middlecolumn{
+margin:0 !important;
+}
+
+#leftcolumn, #rightcolumn{
+display:none !important;
+}
+
+}

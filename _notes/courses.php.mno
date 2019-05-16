@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_courses" value="name:id;datatype:int,name:course_code;datatype:string,name:course_name;datatype:string,name:credit_unit;datatype:string" />
+</info>

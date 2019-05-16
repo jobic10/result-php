@@ -1,0 +1,16 @@
+/* ######### Middle column ######### */
+
+#middlecolumn{
+background-color: transparent;
+margin: 0 0 0 170px;
+padding-left: 11px;
+padding-right: 10px;
+padding-bottom: 1em;
+}
+
+
+/* ######### Right column ######### */
+
+#rightcolumn{
+display: none;
+}
